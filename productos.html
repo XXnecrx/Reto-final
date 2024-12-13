@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Tienda de Artesanías</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Productos</h1>
+        <nav>
+            <a href="index.html" class="text-white mx-3">Inicio</a>
+            <a href="productos.html" class="text-white mx-3">Productos</a>
+            <a href="acerca.html" class="text-white mx-3">Acerca de</a>
+            <a href="contacto.html" class="text-white mx-3">Contacto</a>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://artesaniasdecolombia.com.co/Documentos/Contenido/38013_comie-de-compras-artesanias-colombia-2021-g.jpeg"
+                        class="card-img-top" alt="Combo Artesano">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo Artesano</h5>
+                        <p class="card-text">$100.000</p>
+                        <button class="btn btn-primary" onclick="agregarAlCarrito('Combo Artesano', 100000)">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/a6/0c/da/a60cdac07fc1dc31fc0c49fd526df036.jpg"
+                        class="card-img-top" alt="Anillos Artesanos">
+                    <div class="card-body">
+                        <h5 class="card-title">Anillos Artesanos</h5>
+                        <p class="card-text">$20.000</p>
+                        <button class="btn btn-primary" onclick="agregarAlCarrito('Anillos Artesanos', 20000)">Agregar
+                            al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://artesaniasdecolombia.com.co/Documentos/Catalogo/35134_11-02-016-c-(3).jpg"
+                        class="card-img-top" alt="Jarron Artesano">
+                    <div class="card-body">
+                        <h5 class="card-title">Jarron Artesano</h5>
+                        <p class="card-text">$30.000</p>
+                        <button class="btn btn-primary" onclick="agregarAlCarrito('Jarron Artesano', 30000)">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.lalr.co/cms/2018/10/05201340/CANASTO-4-TETAS.jpg" class="card-img-top"
+                        alt="Bolso Artesano">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolso Artesano</h5>
+                        <p class="card-text">$45.000</p>
+                        <button class="btn btn-primary" onclick="agregarAlCarrito('Bolso Artesano', 45000)">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mt-5">
+            <h3>Carrito de Compras</h3>
+            <ul id="lista-carrito" class="list-group">
+
+            </ul>
+            <p id="total-carrito">Total: $0.00</p>
+            <button class="btn btn-primary" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+
+        <div id="resumen-compra" class="mt-5" style="display: none;">
+            <h3>Resumen de la Compra</h3>
+            <ul id="lista-resumen" class="list-group">
+
+            </ul>
+            <p id="total-resumen">Total a pagar: $0.00</p>
+            <button class="btn btn-success" onclick="realizarPago()">Realizar Pago</button>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2024 Tienda de Artesanías. Todos los derechos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

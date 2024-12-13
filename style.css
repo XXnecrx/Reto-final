@@ -1,0 +1,135 @@
+
+body {
+    background-color: #faf3e0;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #8d6e63;
+    color: white;
+    padding: 20px 0;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 5px solid #d6ad60; 
+}
+header nav a {
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+header nav a:hover {
+    color: #d6ad60;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card img {
+    border-radius: 10px;
+    max-height: 250px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 15px;
+    background: #f4e1c1;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #8d6e63;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #5c4033;
+}
+
+button.btn-primary {
+    background-color: #d6ad60; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+button.btn-primary:hover {
+    background-color: #8d6e63; 
+}
+
+#lista-carrito {
+    margin-top: 20px;
+}
+#lista-carrito .list-group-item {
+    background-color: #fff6e5; 
+    border: 1px solid #d6ad60; 
+    font-size: 1rem;
+    color: #5c4033;
+}
+#total-carrito {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #8d6e63;
+}
+#resumen-compra {
+    background-color: #f4e1c1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#lista-resumen {
+    margin-bottom: 20px;
+}
+#lista-resumen .list-group-item {
+    background-color: #fff6e5; 
+    border: 1px solid #d6ad60;
+    font-size: 1rem;
+    color: #5c4033;
+}
+
+#total-resumen {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #8d6e63;
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #8d6e63;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+h1, h2, h3, h4 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+button, .card, .list-group-item {
+    transition: all 0.3s ease-in-out;
+}
+button:hover, .card:hover, .list-group-item:hover {
+    transform: translateY(-5px);
+}
